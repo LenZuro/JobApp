@@ -17,7 +17,7 @@ const Nearbyjobs = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Nearby Jobs :</Text>
+        <Text style={styles.headerTitle}>Nearby jobs :</Text>
         <TouchableOpacity>
           <Text style={styles.headerBtn}>Show all</Text>
         </TouchableOpacity>
@@ -32,7 +32,7 @@ const Nearbyjobs = () => {
           data?.map((job) => (
             <NearbyJobCard
               job={job}
-              key={`nearby-job-${job.job_id}`}
+              key={`nearby-job-${job?.job_id}`}
               handleNavigate={() => router.push(`/job-details/${job.job_id}`)}
             />
           ))
