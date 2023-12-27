@@ -20,7 +20,7 @@ const Company = ({ companyLogo, jobTitle, companyName, location }) => {
       </View>
 
       <View style={styles.jobTitleBox}>
-        <Tetx style={styles.jobTitle}>{jobTitle}</Tetx>
+        <Text style={styles.jobTitle}>{jobTitle}</Text>
       </View>
 
       <View style={styles.companyInfoBox}>
